@@ -5,9 +5,13 @@ namespace ConsoleApp1
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
-            GenerateMenu();
+            StudentModel sm = new StudentModel();
+            Student st = new Student();
+            sm.Save(st);
+            //GenerateMenu();
         }
 
         private static List<Student> list = new List<Student>();
